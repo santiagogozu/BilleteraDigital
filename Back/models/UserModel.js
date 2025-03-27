@@ -1,7 +1,7 @@
-const {DataTypes} = require("sequelize");
-const sequelize = require("../config/database");
+import {DataTypes} from "sequelize";
+import db from "../config/database.js";
 
-const User = sequelize.define(
+const UserModel = db.define(
   "User",
   {
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
@@ -10,7 +10,7 @@ const User = sequelize.define(
     password: {type: DataTypes.STRING, allowNull: false},
     balance: {type: DataTypes.DECIMAL(10, 2), defaultValue: 0.0},
   },
-  {timestamps: true}
+  {timestamps: false}
 );
 
-module.exports = User;
+export default UserModel;

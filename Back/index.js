@@ -1,15 +1,12 @@
-const express = require("express");
-const sequelize = require("./config/database");
-const userRoutes = require("./routes/user");
+import express from "express";
+import cors from "cors";
+import db from "./config/database.js";
+import userRoutes from "./routes/userRoutes.js";
 // const transactionRoutes = require("./routes/transactionRoutes");
-
-const cors = require("cors");
-
 const app = express();
 
 // Conexión a la base de datos
-sequelize
-  .authenticate()
+db.authenticate()
   .then(() => {
     console.log("Conexión establecida correctamente con la base de datos.");
   })
@@ -23,7 +20,7 @@ app.use(express.json());
 
 // Rutas
 
-app.use("/auth", userRoutes);
+app.use("/users", userRoutes);
 // app.use("/transactions", transactionRoutes);
 
 // Puerto
