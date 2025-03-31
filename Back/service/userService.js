@@ -14,6 +14,8 @@ import bcrypt from "bcryptjs";
 import generateToken from "../utils/generateToken.js";
 
 export const registerUser = async ({name, email, password}) => {
+  console.log("name!!! ", name, "email!!! ", email, "password!! ", password);
+
   const userExists = await UserModel.findOne({where: {email}});
   if (userExists) throw new Error("El usuario ya existe");
 

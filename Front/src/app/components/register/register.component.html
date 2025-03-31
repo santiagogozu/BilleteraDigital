@@ -1,0 +1,102 @@
+<section
+  class="login p-fixed d-flex text-center bg-primary vh-100 align-items-center justify-content-center"
+>
+  <div class="auth-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div
+          class="login-card card-body auth-body shadow-lg p-4 rounded bg-white"
+        >
+          <form class="md-float-material" (ngSubmit)="onSubmit()">
+            <div class="text-center mb-4">
+              <img src="logoVirtualPayments.png" alt="logos.png" width="250" />
+            </div>
+            <div class="auth-box">
+              <h3 class="text-center txt-primary mb-3">
+                Sign Up. It's fast and easy.
+              </h3>
+              <hr />
+
+              <!-- Username -->
+              <div class="input-group d-flex flex-column mb-3">
+                <label class="text-inverse text-left">Username</label>
+                <input
+                  type="text"
+                  class="form-control w-100"
+                  placeholder="Choose Username"
+                  [(ngModel)]="username"
+                  name="username"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="input-group d-flex flex-column mb-3">
+                <label class="text-inverse text-left">Email</label>
+                <input
+                  type="email"
+                  class="form-control w-100"
+                  placeholder="Your Email Address"
+                  [(ngModel)]="email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <!-- Password -->
+              <div class="input-group d-flex flex-column mb-3">
+                <label class="text-inverse text-left">Password</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    [type]="showPassword ? 'text' : 'password'"
+                    class="form-control p-2"
+                    placeholder="Choose Password"
+                    [(ngModel)]="password"
+                    name="password"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Confirm Password -->
+              <div class="input-group d-flex flex-column mb-3">
+                <label class="text-inverse text-left">Confirm Password</label>
+                <div class="d-flex align-items-center">
+                  <input
+                    [type]="showPassword ? 'text' : 'password'"
+                    class="form-control p-2"
+                    placeholder="Confirm Password"
+                    [(ngModel)]="confirmPassword"
+                    name="confirmPassword"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- Mostrar contraseña -->
+              <div class="form-check text-left mb-3">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  [(ngModel)]="showPassword"
+                  name="showPassword"
+                  id="showPassword"
+                />
+                <label
+                  class="form-check-label text-inverse text-left m-b-0"
+                  for="showPassword"
+                  >Mostrar contraseña</label
+                >
+              </div>
+
+              <!-- Botón de registro -->
+              <button type="submit" class="btn btn-primary w-100 p-2 mt-3">
+                Sign up now
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
