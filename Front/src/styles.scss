@@ -860,15 +860,15 @@ button.close {
     margin: -7px 0 0 -15px;
     width: 30px;
     height: 20px;
-    background: url("assets/images/tooltip/tooltip1.svg") center center
-      no-repeat;
+    // background: url("assets/images/tooltip/tooltip1.svg") center center
+    // no-repeat;
     background-size: 100%;
   }
 }
 
 .tooltip-content3 {
   position: absolute;
-  background: url("assets/images/tooltip/shape1.svg") center bottom no-repeat;
+  // background: url("assets/images/tooltip/shape1.svg") center bottom no-repeat;
   background-size: 100% 100%;
   z-index: 9999;
   width: 200px;
@@ -11051,31 +11051,31 @@ $col:#FF5370,#E53935,#f07178,#FF5370,#F78C6C,#F76D47,#FFCB6B,#FFB62C,#C3E88D,#91
 
 body {
   &[themebg-pattern="pattern1"] {
-    background-image: url("assets/images/pattern1.png");
+    // background-image: url("assets/images/pattern1.png");
   }
   &[themebg-pattern="pattern2"] {
-    background-image: url("assets/images/pattern2.png");
+    // background-image: url("assets/images/pattern2.png");
   }
   &[themebg-pattern="pattern3"] {
-    background-image: url("assets/images/pattern3.png");
+    // background-image: url("assets/images/pattern3.png");
   }
   &[themebg-pattern="pattern4"] {
-    background-image: url("assets/images/pattern4.png");
+    // background-image: url("assets/images/pattern4.png");
   }
   &[themebg-pattern="pattern5"] {
-    background-image: url("assets/images/pattern5.png");
+    // background-image: url("assets/images/pattern5.png");
   }
   &[themebg-pattern="pattern6"] {
-    background-image: url("assets/images/pattern6.png");
+    // background-image: url("assets/images/pattern6.png");
   }
   &[themebg-pattern="pattern7"] {
-    background-image: url("assets/images/pattern7.png");
+    // background-image: url("assets/images/pattern7.png");
   }
   &[themebg-pattern="pattern8"] {
-    background-image: url("assets/images/pattern8.png");
+    // background-image: url("assets/images/pattern8.png");
   }
   &[themebg-pattern="pattern9"] {
-    background-image: url("assets/images/pattern9.png");
+    // background-image: url("assets/images/pattern9.png");
   }
 }
 
@@ -12465,31 +12465,31 @@ body {
       }
     }
     &[themebg-pattern="pattern1"] {
-      background-image: url("assets/images/pattern1.png");
+      // background-image: url("assets/images/pattern1.png");
     }
     &[themebg-pattern="pattern2"] {
-      background-image: url("assets/images/pattern2.png");
+      // background-image: url("assets/images/pattern2.png");
     }
     &[themebg-pattern="pattern3"] {
-      background-image: url("assets/images/pattern3.png");
+      // background-image: url("assets/images/pattern3.png");
     }
     &[themebg-pattern="pattern4"] {
-      background-image: url("assets/images/pattern4.png");
+      // background-image: url("assets/images/pattern4.png");
     }
     &[themebg-pattern="pattern5"] {
-      background-image: url("assets/images/pattern5.png");
+      // background-image: url("assets/images/pattern5.png");
     }
     &[themebg-pattern="pattern6"] {
-      background-image: url("assets/images/pattern6.png");
+      // background-image: url("assets/images/pattern6.png");
     }
     &[themebg-pattern="pattern7"] {
-      background-image: url("assets/images/pattern7.png");
+      // background-image: url("assets/images/pattern7.png");
     }
     &[themebg-pattern="pattern8"] {
-      background-image: url("assets/images/pattern8.png");
+      // background-image: url("assets/images/pattern8.png");
     }
     &[themebg-pattern="pattern9"] {
-      background-image: url("assets/images/pattern9.png");
+      // background-image: url("assets/images/pattern9.png");
     }
   }
 }
@@ -15754,12 +15754,12 @@ td.highlight {
 }
 
 td.details-control {
-  background: url("assets/images/details_open.png") no-repeat center center;
+  // background: url("assets/images/details_open.png") no-repeat center center;
   cursor: pointer;
 }
 
 tr.shown td.details-control {
-  background: url("assets/images/details_close.png") no-repeat center center;
+  // background: url("assets/images/details_close.png") no-repeat center center;
 }
 
 #row-select .selected,
@@ -19177,7 +19177,7 @@ table {
 
 .common-img-bg {
   background-size: cover;
-  background: url(assets/images/bg.jpg) no-repeat center center fixed;
+  // background: url(assets/images/bg.jpg) no-repeat center center fixed;
   height: 100%;
 }
 
@@ -19564,7 +19564,7 @@ table {
 ==========================  **/
 
 .chat-bg {
-  background-image: url("assets/images/chat-bg.jpg");
+  // background-image: url("assets/images/chat-bg.jpg");
   background-size: cover;
   background-blend-mode: overlay;
   background-color: rgba(255, 255, 255, 0.45);
